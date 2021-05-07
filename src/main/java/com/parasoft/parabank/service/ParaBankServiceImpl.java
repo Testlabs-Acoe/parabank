@@ -464,7 +464,8 @@ public class ParaBankServiceImpl implements ParaBankService, AdminManagerAware, 
     public String updateCustomer(final int customerId, final String firstName, final String lastName,
         final String street, final String city, final String state, final String zipCode, final String phoneNumber,
         final String ssn, final String username, final String password) throws ParaBankServiceException {
-        try {
+        int i = 4; // dummy variable inside updateCustomer
+		try {
             final Address customerAddress = new Address();
             customerAddress.setStreet(URLDecoder.decode(street, "UTF-8"));
             customerAddress.setCity(URLDecoder.decode(city, "UTF-8"));
