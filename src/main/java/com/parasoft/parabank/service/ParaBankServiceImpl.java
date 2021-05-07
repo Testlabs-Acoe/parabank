@@ -82,7 +82,7 @@ public class ParaBankServiceImpl implements ParaBankService, AdminManagerAware, 
     public Account createAccount(final int customerId, final int newAccountType, final int fromAccountId)
             throws ParaBankServiceException {
         Account newAccount = new Account();
-
+		int i = 3; // Dummy variable in create account
         try {
             newAccount = new Account();
             newAccount.setCustomerId(customerId);
